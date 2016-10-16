@@ -1,14 +1,13 @@
-var should_be_below = 10;
-var amount_of_multiples_of_3 = 0;
-var sum_of_multiples_of_3 = 0;
 
-for (i = 1; i < should_be_below; i++) {
-	if (i % 3 === 0) {
-		console.log(i);
-    amount_of_multiples_of_3++;
-    sum_of_multiples_of_3 += i;
-	}
+function sum_of_multiples_of_3(should_be_below) {
+  var current_sum_of_multiples_of_3 = 0;
+  for (i = 1; i < should_be_below; i++) {
+  	if (i % 3 === 0) {
+      current_sum_of_multiples_of_3 += i;
+  	}
+  }
+  return current_sum_of_multiples_of_3;
 }
 
-console.log("amount: " + amount_of_multiples_of_3);
-console.log("sum: " + sum_of_multiples_of_3);
+
+console.log(sum_of_multiples_of_3(10));
