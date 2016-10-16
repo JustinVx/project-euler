@@ -9,4 +9,9 @@ function sum_of_multiples_of_3_or_5(should_be_below) {
   return current_sum_of_multiples_of_3_or_5;
 }
 
-console.log(sum_of_multiples_of_3_or_5(10));
+function answer_problem_1(should_be_below) {
+  console.log("There are " + sum_of_multiples_of_3_or_5(should_be_below) + " multiples of 3 or 5 below " + should_be_below + "!");
+}
+
+answer_problem_1(10);
+answer_problem_1(1000);
